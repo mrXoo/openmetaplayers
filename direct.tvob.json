@@ -1,0 +1,146 @@
+{
+    "name": "TV Only Better",
+    "priority"     : 99,
+    "plugin"       : "plugin.video.tvobv1",
+    "id": "direct.tvob",
+    "movies": [
+  [
+	{
+		"link": "plugin://plugin.video.tvobv1/",
+		"steps": [
+			".*Movies by.*",
+			".*2019.*",
+			"{title|replace(%3A,&colon;)}.*"		
+		],
+			"action": "ACTIVATE"
+	},
+	{
+		"link": "plugin://plugin.video.tvobv1/",
+		"steps": [
+			".*Movies by.*",
+			".*2019.*",
+			"{title|replace( ,_)}.*"			
+		],
+			"action": "ACTIVATE"
+	},
+	{
+		"link": "plugin://plugin.video.tvobv1/",
+		"steps": [
+			".*Movies by.*",
+			".*2020.*",
+			"{title|replace(%3A,&colon;)}.*"			
+		],
+			"action": "ACTIVATE"
+	},
+	{
+		"link": "plugin://plugin.video.tvobv1/",
+		"steps": [
+			".*Movies by.*",
+			".*2020.*",
+			"{title|replace( ,_)}.*"			
+		],
+			"action": "ACTIVATE"
+	},
+	{
+		"link": "plugin://plugin.video.tvobv1/",
+		"steps": [
+			".*Movies by.*",
+			".*Blockbusters.*",
+			"{title|replace(%3A,&colon;)}.*"		
+		],
+			"action": "ACTIVATE"
+	},
+	{
+		"link": "plugin://plugin.video.tvobv1/",
+		"steps": [
+			".*Movies by.*",
+			".*Blockbusters.*",
+			"{title|replace( ,_)}.*"			
+		],
+			"action": "ACTIVATE"
+	},
+	{
+		"link": "plugin://plugin.video.tvobv1/",
+		"steps": [
+			".*Movies by.*",
+			".*2018.*",
+			"{title|replace(%3A,&colon;)}.*"		
+		],
+			"action": "ACTIVATE"
+	},
+	{
+		"link": "plugin://plugin.video.tvobv1/",
+		"steps": [
+			".*Movies by.*",
+			".*2018.*",
+			"{title|replace( ,_)}.*"			
+		],
+			"action": "ACTIVATE"
+	},
+	{
+		"link": "plugin://plugin.video.tvobv1/?description&amp;iconimage=D%3a%5cKODI%5cportable_data%5caddons%5cplugin.video.tvobv1%5cicon.png&amp;mode=333&amp;name=%5bCOLOR%20white%5dAll%20Movies%5b%2fCOLOR%5d&amp;url=vod&quot;,return",
+		"steps": [
+			"keyboard: {title}",
+			"{title|replace(%3A,&colon;)}.*"
+		],
+			"action": "ACTIVATE"
+	},
+	{
+		"link": "plugin://plugin.video.tvobv1/?description&amp;iconimage=D%3a%5cKODI%5cportable_data%5caddons%5cplugin.video.tvobv1%5cicon.png&amp;mode=333&amp;name=%5bCOLOR%20white%5dAll%20Movies%5b%2fCOLOR%5d&amp;url=vod&quot;,return",
+		"steps": [
+			"keyboard: {title}",
+			"{title|replace( ,_)}.*"
+		],
+			"action": "ACTIVATE"
+	}
+  ]
+ ],
+ "tvshows": [
+  [
+            {
+		"link": "plugin://plugin.video.tvobv1/",
+		"steps": [
+			".*]TV Shows.*",
+			"All",			
+			"{clearname}",
+			"Season {season}",
+			"Episode {episode:02d}"
+		],
+			"action": "ACTIVATE"
+            },
+            {
+		"link": "plugin://plugin.video.tvobv1/",
+		"steps": [
+			".*]TV Shows.*",
+			"All",			
+			"{clearname|replace(%27,')}",
+			"Season {season}",
+			"Episode {episode:02d}"
+		],
+			"action": "ACTIVATE"
+            },
+            {
+		"link": "plugin://plugin.video.tvobv1/",
+		"steps": [
+			".*]TV Shows.*",
+			"All",			
+			"{clearname|replace(%27s,'s )}",
+			"Season {season}",
+			"Episode {episode:02d}"
+		],
+			"action": "ACTIVATE"
+            },
+            {
+		"link": "plugin://plugin.video.tvobv1/",
+		"steps": [
+			".*]TV Shows.*",
+			"All",			
+			"{clearname|replace(%27,')}",
+			"Season {season}",
+			"Episode {episode:02d}"
+		],
+			"action": "ACTIVATE"
+            }
+  ]
+ ]
+}
