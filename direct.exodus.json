@@ -6,6 +6,16 @@
     "movies": [
   [
 	{
+		"link": "plugin://plugin.video.exodusv2/",
+		"steps": [
+			".*Movies.*",
+			".*Movie Cat.*",
+			".*New Rel.*",
+			"{title|replace(%3A,&colon;)}.*"		
+		],
+			"action": "ACTIVATE"
+	},
+	{
 		"link": "plugin://plugin.video.exodusv2/?description&amp;iconimage=C%3a%5cUsers%5cED%5cDocuments%5cKODI%5cLEIA%5cKodi%5cportable_data%5caddons%5cplugin.video.exodusv2%5cresources%5cicons%5csearch.png&amp;mode=555&amp;name=%5bCOLOR%20white%5dSearch%20Movies%5b%2fCOLOR%5d&amp;url=url&quot;,return",
 		"steps": [
 			"keyboard: {title}",

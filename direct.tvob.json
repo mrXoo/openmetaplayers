@@ -6,6 +6,15 @@
     "movies": [
   [
 	{
+		"link": "plugin://plugin.video.tvobv1/",
+		"steps": [
+			".*Movies by.*",
+			".*New Rel.*",
+			"{title|replace(%3A,&colon;)}.*"		
+		],
+			"action": "ACTIVATE"
+	},
+	{
 		"link": "plugin://plugin.video.tvobv1/?description&amp;iconimage=D%3a%5cKODI%5cportable_data%5caddons%5cplugin.video.tvobv1%5cicon.png&amp;mode=333&amp;name=%5bCOLOR%20white%5dAll%20Movies%5b%2fCOLOR%5d&amp;url=vod&quot;,return",
 		"steps": [
 			"keyboard: {title}",
